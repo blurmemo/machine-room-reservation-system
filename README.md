@@ -19,12 +19,9 @@
 ### ODBC配置
 
 本人使用ODBC连接的mysql，具体操作见下图，已经很详细了
-
-![](\第一步.png)
-
-![](\第二步.png)
-
-![](\第三步.png)
+![第一步](https://user-images.githubusercontent.com/92586621/168582538-ad091af7-052b-47df-b0fe-ef8715c3b80b.png)
+![第二步](https://user-images.githubusercontent.com/92586621/168582544-50a4e958-4043-40d9-b34b-fc90fbc9c581.png)
+![第三步](https://user-images.githubusercontent.com/92586621/168582549-71cd62b9-61e7-405a-924c-14d35df90d3f.png)
 
 ### 需要的代码
 
