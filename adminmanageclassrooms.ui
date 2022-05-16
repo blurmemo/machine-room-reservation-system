@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminmanageclassrooms</class>
+ <widget class="QWidget" name="adminmanageclassrooms">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>972</width>
+    <height>664</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>教室信息</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>571</width>
+     <height>621</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>520</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>520</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除教室信息</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="empty_all">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>370</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>一键全部设置空置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="empty_all_2">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>370</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>一键全部设置已预约</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="query_condition">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>80</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>请选择</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>所有</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>空置</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>已预约</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="query">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>80</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="set">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>220</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="set_condition">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>220</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>请选择</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>空置</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>已预约</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>query</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmanageclassrooms</receiver>
+   <slot>query()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>896</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>938</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>set</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmanageclassrooms</receiver>
+   <slot>set()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>885</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>936</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>empty_all</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmanageclassrooms</receiver>
+   <slot>setEmptyAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>671</x>
+     <y>331</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>714</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>empty_all_2</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmanageclassrooms</receiver>
+   <slot>setReservedAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>884</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>929</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>del</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmanageclassrooms</receiver>
+   <slot>del()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>679</x>
+     <y>496</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>712</x>
+     <y>531</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>back</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmanageclassrooms</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>871</x>
+     <y>492</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>908</x>
+     <y>528</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>back()</slot>
+  <slot>del()</slot>
+  <slot>setReservedAll()</slot>
+  <slot>query()</slot>
+  <slot>setEmptyAll()</slot>
+  <slot>set()</slot>
+ </slots>
+</ui>

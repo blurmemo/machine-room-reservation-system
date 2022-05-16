@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>teacherqueryhisreservation</class>
+ <widget class="QWidget" name="teacherqueryhisreservation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>913</width>
+    <height>714</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>我的预约</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>631</width>
+     <height>661</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="classroomId">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>130</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;教室号&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>270</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;时间&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="update_classroomId">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>130</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;修改&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>430</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>560</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="update_time">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>270</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="update_time_value">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>270</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>请选择</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="update_classroom_id_value">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>130</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>请选择</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>update_classroomId</sender>
+   <signal>clicked()</signal>
+   <receiver>teacherqueryhisreservation</receiver>
+   <slot>updateReservedClassroomId()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>776</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>825</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>update_time</sender>
+   <signal>clicked()</signal>
+   <receiver>teacherqueryhisreservation</receiver>
+   <slot>updateReservedTime()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>771</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>825</x>
+     <y>304</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>del</sender>
+   <signal>clicked()</signal>
+   <receiver>teacherqueryhisreservation</receiver>
+   <slot>del()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>630</x>
+     <y>357</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>629</x>
+     <y>494</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>back</sender>
+   <signal>clicked()</signal>
+   <receiver>teacherqueryhisreservation</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>790</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>825</x>
+     <y>466</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableView</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>teacherqueryhisreservation</receiver>
+   <slot>addClassroomIdinCombox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>494</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableView</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>teacherqueryhisreservation</receiver>
+   <slot>addTimeinCombox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>657</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>updateReservedTime()</slot>
+  <slot>updateReservedClassroomId()</slot>
+  <slot>del()</slot>
+  <slot>back()</slot>
+  <slot>addClassroomIdinCombox()</slot>
+  <slot>addTimeinCombox()</slot>
+ </slots>
+</ui>

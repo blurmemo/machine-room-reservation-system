@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminmenu</class>
+ <widget class="QMainWindow" name="adminmenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>761</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>管理员界面</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="check_reservation">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>70</y>
+      <width>171</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>审核预订</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="query_reservation">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>70</y>
+      <width>171</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>查看所有预订</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exist">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>390</y>
+      <width>381</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="query_all_classroom">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>220</y>
+      <width>171</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>查看所有教室</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mangeUser">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>220</y>
+      <width>171</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>管理用户</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>761</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>check_reservation</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmenu</receiver>
+   <slot>check_reservation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>253</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>165</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>query_reservation</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmenu</receiver>
+   <slot>query_reservation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>479</x>
+     <y>174</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>671</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>query_all_classroom</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmenu</receiver>
+   <slot>query_all_classroom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exist</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmenu</receiver>
+   <slot>exist()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>519</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>668</x>
+     <y>362</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mangeUser</sender>
+   <signal>clicked()</signal>
+   <receiver>adminmenu</receiver>
+   <slot>manage_user()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>641</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>exist()</slot>
+  <slot>check_reservation()</slot>
+  <slot>query_all_classroom()</slot>
+  <slot>query_reservation()</slot>
+  <slot>manage_user()</slot>
+ </slots>
+</ui>

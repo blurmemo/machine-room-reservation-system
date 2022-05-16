@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminqueryreservation</class>
+ <widget class="QWidget" name="adminqueryreservation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>997</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>预约信息</string>
+  </property>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>530</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>641</width>
+     <height>651</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>530</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="set_condition">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>110</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>请选择</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>待审核</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>通过</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>不通过</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="set">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>110</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="query_condition">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>310</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>请选择</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>所有预约</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>待审核</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>通过</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>不通过</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>310</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>del</sender>
+   <signal>clicked()</signal>
+   <receiver>adminqueryreservation</receiver>
+   <slot>del()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>623</x>
+     <y>435</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>662</x>
+     <y>482</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>back</sender>
+   <signal>clicked()</signal>
+   <receiver>adminqueryreservation</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>732</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>789</x>
+     <y>476</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>adminqueryreservation</receiver>
+   <slot>query()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>721</x>
+     <y>288</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>796</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>set</sender>
+   <signal>clicked()</signal>
+   <receiver>adminqueryreservation</receiver>
+   <slot>updateReservation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>742</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>back()</slot>
+  <slot>del()</slot>
+  <slot>updateReservation()</slot>
+  <slot>query()</slot>
+ </slots>
+</ui>
